@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="card">
+
+                <div class="titular-cartao">
+                    <label for="nome">Cardholder Name</label>
+                    <input type="text" id="nome" placeholder="Jane Appleseed" required>
+                </div>
+
+                <div class="numero-cartao">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9123 0000" required>
+                </div>
+
+                <div class="data-expiracao">
+                    <label for="data-expiracao">Exp. Date (MM/YY)</label>
+                    <input type="text" id="mes-expiracao" placeholder="MM" maxlength="2" required>
+                    <span>/</span>
+                    <input type="text" id="ano-expiracao" placeholder="YY" maxlength="2" required>
+                </div>
+
+                <div class="cvc">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" placeholder="123" maxlength="3" required>
+                </div>
+            </div>
+
+            <button type="submit">Confirm</button>
+        </form>
+    </div>
+</body>
+</html>
